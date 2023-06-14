@@ -53,9 +53,9 @@ export const myData = async (token) => {
     }
   };
 
-  export const myRoutineData = async (token) => {
+  export const myRoutineData = async (username, token) => {
     try {
-      const response = await fetch(`${BASE_URL}/users/:username/routines`, {
+      const response = await fetch(`${BASE_URL}/users/:${username}/routines`, {
         headers: {
           'Content-Type': 'application/json',
           'Authorization': `Bearer ${token}`
