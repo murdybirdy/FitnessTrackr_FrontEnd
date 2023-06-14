@@ -11,7 +11,7 @@ export const registerUser = async (user) => {
       },
       body: JSON.stringify({
         user
-      }),
+      })
     });
     const result = await response.json();
     return result;
@@ -29,7 +29,7 @@ export const registeredUser = async (user) => {
       },
       body: JSON.stringify({
         user,
-      }),
+      })
     });
     const result = await response.json();
     return result;
@@ -44,7 +44,7 @@ export const myData = async (token) => {
         headers: {
           'Content-Type': 'application/json',
           'Authorization': `Bearer ${token}`
-        },
+        }
       });
       const result = await response.json();
       return result
@@ -59,7 +59,7 @@ export const myData = async (token) => {
         headers: {
           'Content-Type': 'application/json',
           'Authorization': `Bearer ${token}`
-        },
+        }
       });
       const result = await response.json();
       return result
