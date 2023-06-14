@@ -67,9 +67,3 @@ export const myData = async (token) => {
       console.error(err);
     }
   };
-
-//* ACTIVITIES
-
-//* ROUTINES
-
-//* ROUTINE_ACTIVITIES
